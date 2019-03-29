@@ -1,6 +1,6 @@
 # ThesisCodingAnalysis
 
-Uses CAT[CAT](https://cat.texifter.com/) (Coding Analysis Toolkit) generated CSV files to generate a visual representation of frequency of codes, with an option to see quotes related to that code.
+Uses [CAT](https://cat.texifter.com/) (Coding Analysis Toolkit) generated CSV files to generate a visual representation of frequency of codes, with an option to see quotes related to that code.
 
 The folder "Python" hosts `csvProcess.py`, which transforms a CAT CSV to a JSON which the visualisation uses
 "Data" folder hosts `input.txt`, the input given to CAT (Lorem Ipsum text) and `LoremIpsum_1.csv`, the CSV output of CAT given random codes to lines in the input.
