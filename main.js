@@ -7,8 +7,11 @@ const folder = "Data";
 function main(){
     d3.json(folder + "/processedData.json").then(function(codes){
 
+        let minAmount = 1;
+        let maxAmount = d3.max(Object.keys(codes), function(d) { return (d == "none" ? 0 : codes[d].count);});
+
         scaleColour = d3.scaleLinear()
-            .domain([1, 25])
+            .domain([minAmount, maxAmount])
             .range(["#e5f5f9", "#2ca25f"])
 
         d3.selectAll("button")
